@@ -1,0 +1,16 @@
+{
+  "name": "family-santa",
+  "version": "1.0.0",
+  "description": "The family Christmas wish list that keeps a secret. Call dibs on gifts without spoiling the surprise.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "license": "MIT"
+}

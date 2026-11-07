@@ -1,0 +1,10 @@
+{
+  "name": "Family Santa",
+  "short_name": "Family Santa",
+  "description": "The family Christmas wish list that keeps a secret.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6eedd",
+  "theme_color": "#c63a2e",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

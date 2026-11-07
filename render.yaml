@@ -1,0 +1,17 @@
+# One-click deploy on Render (free plan).
+# Free Render instances wipe their disk when they restart, so the family's
+# data lives in a free Upstash Redis database instead. Paste its REST URL and
+# token when Render asks for them.
+services:
+  - type: web
+    name: family-santa
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/session
+    envVars:
+      - key: UPSTASH_REDIS_REST_URL
+        sync: false
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: false
