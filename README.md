@@ -35,7 +35,7 @@ Whoever starts the family is an organizer. Organizers can rename the family, res
 
 ## Running it
 
-You need [Node.js](https://nodejs.org) 18.17 or newer. There are **no dependencies** to install.
+You need [Node.js](https://nodejs.org) 22 (any 22.x). There are **no dependencies** to install. Deploying on Render's free plan is covered in [DEPLOY.md](DEPLOY.md).
 
 ```bash
 npm start          # http://localhost:3000

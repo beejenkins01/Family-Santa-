@@ -11,6 +11,10 @@ services:
     startCommand: node server.js
     healthCheckPath: /api/session
     envVars:
+      # Major is also bounded in package.json engines. An open range
+      # (>=18) makes Render pick the newest Node, which this app is not pinned to.
+      - key: NODE_VERSION
+        value: "22"
       - key: UPSTASH_REDIS_REST_URL
         sync: false
       - key: UPSTASH_REDIS_REST_TOKEN
